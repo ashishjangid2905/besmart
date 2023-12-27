@@ -5,7 +5,7 @@ from .models import Subscription_plans, Blog
 # Create your views here.
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'home.html')
 
 def features(request):
     return render(request, 'features.html')
