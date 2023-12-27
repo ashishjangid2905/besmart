@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <main class="container-fluid mt-1 p-0">
+    <!-- Banner Head Start here -->
+    <section class="container-fluid p-0">
+      <article class="index_product container-fluid p-0">
+        <div class="container">
+          <div class="jumbotron">
+            <h1 class="text-white display-4">Product</h1>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- Banner Head End -->
+
+    <section class="container-fluid pt-5 pb-5">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-lg-7 col-md-6">
+            <div class="_titleDiv">
+              <h2 class="text-secondary">Online</h2>
+            </div>
+            <p>BE Smart Exim's unparalleled online platform BE 2.0 integrates high performance, secure, agile, and reliable tools to provide easy-to-navigate and quickly scalable trade information reports to its users.</p>
+            <p class="text-primary">
+              <strong>Analyzing Global trade market analytics assist traders to gain:</strong>
+            </p>
+            <p>Revenue Optimisation: This enables users to make goal-oriented investment plans, sustainably managing to spend, and significantly reducing cost by considerably upscaling the profit margins.</p>
+            <p>Exploring and Targeting Prospects: The regions, locate potential companies buying/selling key products and also to target active importers and exporters.</p>
+            <p>Competition Analysis: The statistical facts and figures significantly provides users to study industry rivalry, threat of substitution and implement an offensive-defensive strategy</p>
+            <button type="button" class="btn btn-warning text-white fw-semibold fs-5">
+              Request for Demo<svg xmlns="http://www.w3.org/2000/svg" width="30" height="22" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+              </svg>
+            </button>
+          </div>
+          <div class="col-lg-5 col-md-6 text-right">
+            <figure class="_pro-off-fig">
+              <img src="{% static 'image/solitem1.jpeg' %}" alt="" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

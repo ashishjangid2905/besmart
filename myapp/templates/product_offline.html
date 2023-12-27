@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <main class="container-fluid mt-1 p-0">
+    <!-- Banner Head Start here -->
+    <section class="container-fluid p-0">
+      <article class="index_product container-fluid p-0">
+        <div class="container">
+          <div class="jumbotron">
+            <h1 class="text-white display-4">Product</h1>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- Banner Head End -->
+
+    <section class="container-fluid pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-6">
+            <div class="_titleDiv">
+              <h2 class="text-secondary">Offline</h2>
+            </div>
+            <p>In the process of serving our clients with flexible options, BE Smart Exim also provides its trade report in an offline manner.</p>
+
+            <p class="text-primary">
+              <strong>Highly recommended for the users looking for:</strong>
+            </p>
+
+            <ul class="_proDesc-list">
+              <li>Ways to access trade information in order to boost business by using informative tools via the offline platform</li>
+
+              <li>Specific key ports coverage only</li>
+
+              <li>Reports of the product with a higher number of cargo shipment records</li>
+
+              <li>Customization of data representation based on specific parameters only</li>
+
+              <li>Cost-effective solution to study relevant trade insights in an offline manner</li>
+            </ul>
+            <p>The key features of Offline Information will be there similar to the online dashboard but in offline manner making the reports equally useful and cost effective.</p>
+
+            <button type="button" class="btn btn-warning text-white fw-semibold fs-5">
+              Request for Demo<svg xmlns="http://www.w3.org/2000/svg" width="30" height="22" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+              </svg>
+            </button>
+          </div>
+          <div class="col-lg-5 col-md-6 text-right">
+            <figure class="_pro-off-fig">
+              <img src="{% static 'Image/offline.png' %}" alt="" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

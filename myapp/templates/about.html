@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <main class="container-fluid mt-1 p-0">
+    <!-- Banner Head Start here -->
+    <section class="container-fluid p-0">
+      <article class="index_about container-fluid p-0">
+        <div class="container">
+          <div class="jumbotron">
+            <h1 class="text-white display-4">About Us</h1>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- Banner Head End -->
+    <section class="container-fluid m-0 px-0">
+      <div class="container-fluid bg-light d-flex m-0 justify-content-center">
+        <div class="container py-5">
+          <div class="row justify-content-center pt-3">
+            <div class="col-lg-4 col-md-6">
+              <figure class="p-0 m-0">
+                <img src="{% static 'Image/about.jpg' %}" alt="" class="img-fluid" />
+              </figure>
+            </div>
+            <div class="col-lg-8 col-md-6 about_div">
+              <div class="container ps-3">
+                <div>
+                  <p class="text-warning">Learn More About</p>
+                  <h1>Our <span class="text-warning">Business</span></h1>
+                </div>
+                <p class="text-secondary">Available as web-based inter-facial and offline platform access, BE Smart Exim is speeding up and simplifying the exploration and identification of foreign trade market by yielding the quality information essential for global presence and expansion. Providing the access to a comprehensive view of export and import trade intelligence reports of every commodity at the most detailed level of HS Code (aka HSN, RITC Code, Harmonized System Code).</p>
+
+                <p class="text-secondary">BE Smart Exim has a dedicated team of data operation professionals collecting, screening, analyzing and collating world trade statistics through official sources. We then align various reporting methodologies into unified format, and convert currencies and unit of measure to provide the best in class trade data tool experiences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section : Begin -->
+    <section class="container-fluid py-5">
+      <div class="container">
+        <div class="text-center my-5">
+          <h2 class="_title">What We are Offering to <br /><span class="text-warning">Customers</span></h2>
+        </div>
+        <div class="row _infoBox-row justify-content-center">
+          <!-- Col : Begin -->
+
+          <div class="col-lg-4 col-md-6 px-2 mb-3">
+            <div class="_infoBox">
+              <figure class="_infoBox-fig">
+                <img src="{% static 'Image/service1.jpg' %}" alt="" />
+              </figure>
+              <div class="_infoBox-body">
+                <span class="_info-icon"><img src="{% static 'icons/info-1.png' %}" alt="" /></span>
+                <h5>Enhanced Depth for Wider Insights</h5>
+                <p class="_info-txt">BE Smart Exim connects data across different variables that brings you the deepest insight on the global cargo movement.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 px-2 mb-3">
+            <div class="_infoBox">
+              <figure class="_infoBox-fig">
+                <img src="{% static 'Image/service2.jpg' %}" alt="" />
+              </figure>
+              <div class="_infoBox-body">
+                <span class="_info-icon"><img src="{% static 'icons/info-2.png' %}" alt="" /></span>
+                <h5>Diversified Forecasting</h5>
+                <p class="_info-txt">Advanced methods of forecasting, at BE Smart Exim, enhances the scope of client delight and success by enabling them to visualize the risk and opportunity attached with different variables, serving a competitive edge when making crucial decisions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 px-2 mb-3">
+            <div class="_infoBox">
+              <figure class="_infoBox-fig">
+                <img src="{% static 'Image/service3.jpg' %}" alt="" />
+              </figure>
+              <div class="_infoBox-body">
+                <span class="_info-icon"><img src="{% static 'icons/info-3.png' %}" alt="" /></span>
+                <h5>Enhanced Coverage Circle</h5>
+                <p class="_info-txt">With the addition of 10 African nations, BE Smart Exim currently captures the export-import trade intelligence reports from 50+ nations across 5 continents based on in-house Exim records and master bill of lading. Around 120 million records are being collected every year from 50+ nations, 1000+ of regions and 250+ commodities group.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col : End -->
+        </div>
+      </div>
+    </section>
+    <!-- Section : End -->
+  </main>
+{% endblock %}

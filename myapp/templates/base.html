@@ -1,0 +1,151 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>Be Smart Exim</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'Image/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+        
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar_logo m-4">
+                <a href="#"><img src="{% static 'Image/LOGO.png' %}" alt="" width="100em"></a>
+            </div>
+            <div class="menu_items">
+                <ul class="menu_items_list">
+                    <li class="menu_items_has_child"><a href="#">BE Datos</a> <span class="clickd"></span>
+                        <ul class="sub_menu">
+                            <li><a href="/">BE 2.0</a></li>
+                            <li><a href="/features">Features</a></li>
+                            <li><a href="/pricing">Pricing</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_items_has_child"><a href="#">Solutions</a> <span class="clickd"></span>
+                        <ul class="sub_menu">
+                            <li><a href="/supplier">Supplier</a></li>
+                            <li><a href="/buyer">Buyer</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_items_has_child"><a href="#">Products</a> <span class="clickd"></span>
+                        <ul class="sub_menu">
+                            <li><a href="/online">Online Portal</a></li>
+                            <li><a href="/offline">Offline Reports</a></li>
+                            <!-- <li><a href="#">Active Directories</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="menu_items_has_child"><a href="#">Company</a> <span class="clickd"></span>
+                        <ul class="sub_menu">
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/team">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_items_has_child"><a href="#">Publishing</a> <span class="clickd"></span>
+                        <ul class="sub_menu">
+                            <li><a href="#">News</a></li>
+                            <li><a href="/blogs">Blogs</a></li>
+                            <li><a href="#">Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_user_div">
+                <ul>
+                    <li><a href="#" class="bg_solid">Log In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+            <button class="nav_toggle_btn">
+                <div><span class="menu_icon"><img src="icons/menu_icon.png" alt=""></span></div>
+            </button>
+        </nav>
+    </header>
+    {% block content %}
+    
+    {% endblock content %}
+
+    <footer>
+        <div class="at_margin"></div>
+        <div class="footer_section">
+            <div class="foot_sec1">
+                <a href="#">
+                    <img src="{% static 'Image/LOGO_WHITE.png' %}" alt="image">
+                </a>
+                <p>909, 9th Floor, DLF Galleria, Block BG-8, Action Area 1B, Newtown, Kolkata- 700156, West Bengal, INDIA</p>
+            </div>
+            <div class="foot_sec2">
+                <p class="f_title">Product</p>
+                <ul class="f_list">
+                    <li><a href="/">BE 2.0</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/supplier">Solution Supplier</a></li>
+                    <li><a href="/buyer">Solution Buyer</a></li>
+                </ul>
+            </div>
+            <div class="foot_sec3">
+                <p class="f_title">Quick Links</p>
+                <ul class="f_list">
+                    <li><a href="#">HS Code Search</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="foot_sec4">
+                <p class="f_title">At A Glance</p>
+                <ul class="f_list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="foot_sec5">
+                <p class="f_title">Visiter's Corner</p>
+                <ul class="f_list">
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="/blogs">Blogs</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="foot_sec6">
+                <p class="f_title">Contact Us</p>
+                <ul class="f_list">
+                    <li><a href="tel: 919073389001"> Sales:(+91) 90733 89001</a></li>
+                    <li><a href="tel: 919073371811"> Sales:(+91) 90733 71811</a></li>
+                </ul>
+                <p class="f_title">Follow Us On</p>
+                <ul class="f_list social">
+                    <li><a href="#"><img src="{% static 'icons/icons8-youtube-50.png' %}" alt=""></a></li>
+                    <li><a href="#"><img src="{% static 'icons/icons8-facebook-50.png' %}" alt=""></a></li>
+                    <li><a href="#"><img src="{% static 'icons/icons8-twitter-50.png' %}" alt=""></a></li>
+                    <li><a href="#"><img src="{% static 'icons/icons8-linkedin-50.png' %}" alt=""></a></li>
+                    <li><a href="#"><img src="{% static 'icons/icons8-instagram-50.png' %}" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="{% static 'script/script.js' %}"></script>
+</body>
+
+</html>

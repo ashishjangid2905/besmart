@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <main class="_main">
+    <section class="price_head">
+      <div class="container_feature">
+        <div class="bannerCont">
+          <p class="banner_title">
+            <span class="display-5">Pricing</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <Section class="container_price">
+      <div class="priceCont">
+        <div class="pricetable">
+          <table>
+            <tr>
+              <th>Plan</th>
+              {% for x in myplan %}
+                {% if x.status == 1 %}
+                  <th>{{ x.plan }}</th>
+                {% endif %}
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>Price</td>
+              {% for x in myplan %}
+                {% if x.status == 1 %}
+                  <td>&#8377 {{ x.price }}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>Countries</td>
+              {% for x in myplan %}
+                {% if x.status == 1 %}
+                  <td>{{ x.countries }}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>Validity</td>
+
+              {% for x in myplan %}
+                {% if x.status == 1 %}
+                  <td>{{ x.validity }}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>Data Access</td>
+
+              {% for x in myplan %}
+                {% if x.status == 1 %}
+                  <td>{{ x.data_access }}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>Downloads</td>
+
+              {% for x in myplan %}
+                {% if x.status == 1 %}
+                  <td>{{ x.downloads }}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>Search per Day</td>
+
+              {% for x in myplan %}
+                {% if x.status == 1 %}
+                  <td>{{ x.searches }}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>Total Workspace</td>
+
+              {% for x in myplan %}
+                {% if x.status == 1 %}
+                  <td>{{ x.workspace }}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>Records per Workspace</td>
+
+              {% for x in myplan %}
+                {% if x.status == 1 %}
+                  <td>{{ x.records_ws }}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>Support</td>
+
+              {% for x in myplan %}
+                {% if x.status == 1 %}
+                  <td>{{ x.support }}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>USERS</td>
+
+              {% for x in myplan %}
+                {% if x.status == 1 %}
+                  <td>{{ x.user }}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+            <tr>
+              <td></td>
+
+              {% for x in myplan %}
+                {% if x.status == 1 %}
+                  <td>
+                    <button>Try Demo</button>
+                  </td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+          </table>
+        </div>
+      </div>
+    </Section>
+  </main>
+{% endblock %}

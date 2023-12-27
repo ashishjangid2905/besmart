@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<main class="_main">
+    <section class="container_sol" id="supplier">
+        <div class="bannerCont">
+            <p class="banner_title">
+                <span class="display-5">Solution Supplier</span>
+            </p>
+        </div>
+        <div class="sol_sec">
+            <div class="sol_cot">
+                <div class="inner_cot">
+                    <div class="sol_head">
+                        <h2 class="titleSol">Suppliers</h2>
+                        <p>Finding reliable suppliers is equally challenging and complex like foreign buyers.
+                            Significant information like production capacity, reliability of the foreign supplier
+                            are always the area of interest for the importers. Accessing the analytical trade
+                            intelligence reports by BE Smart Exim enables its users to understand the trade pattern,
+                            prices offerings etc making the business deal more effective.</p>
+                    </div>
+                </div>
+                <div class="inner_cot">
+                    <div class="titleDes">
+                        <p><strong>How BE Smart Exim improves your experience by reducing your effort?</strong></p>
+                    </div>
+                </div>
+                <div class="inner_cot">
+                    <div class="sol_item">
+                        <div class="item_infoBox">
+                            <figure class="infoBox_fig">
+                                <img src="{% static 'Image/solitem1.jpeg' %}" alt="">
+                            </figure>
+                            <div class="item_infoCont">
+                                <h4>Listing of Potential Supplier</h4>
+                                <p>Number of potential buyers have been listed that can be explored on the basis of geographical location and time frame</p>
+                            </div>
+                        </div>
+                        <div class="item_infoBox">
+                            <figure class="infoBox_fig">
+                                <img src="{% static 'Image/solitem3.jpeg' %}" alt="">
+                            </figure>
+                            <div class="item_infoCont">
+                                <h4>Studying Supplier Behaviour</h4>
+                                <p>The Buyers can be studied further with other relevant information related to the transaction frequency, buying volume, time period, etc.</p>
+                            </div>
+                        </div>
+                        <div class="item_infoBox">
+                            <figure class="infoBox_fig">
+                                <img src="{% static 'Image/solitem2.jpeg' %}" alt="">
+                            </figure>
+                            <div class="item_infoCont">
+                                <h4>Monitoring and Analyzing Buyers Activity</h4>
+                                <p>Monitoring can be done by reviewing the purchase activity of buyers from other exporters that results in enhancing the efficiency of price analysis, demand analysis, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+</main>
+
+{% endblock content %}
