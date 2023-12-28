@@ -666,6 +666,13 @@ footer .footer_section{
 
 /* New Dev style sheets */
 
+._home{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 50em;
+}
+
 .home_banner::before{
     content: '';
     display: flex;
@@ -685,22 +692,218 @@ footer .footer_section{
     width: 100%;
     height: 100%;
     left: 0;
+    z-index: 1;
 }
 
+
 .home_banner h1{
-    padding-top: 0em;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
-    font-size: 6.67em;
+    font-size: 6.75em;
     font-weight: 300;
+    padding-top: 0.5em;
 }
 
 .home_banner h1>span{
     font-weight: 700;
 }
 
-.home_banner p{
+.home_banner .home_banner2 p{
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     font-size: 2.3em;
 }
+
+
+._home ._tag_div{
+    position: relative;
+    margin-top: 2em;
+    z-index: 500;
+}
+
+
+._home .tag_line p{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 1.6em;
+    line-height: 0.6em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+._home .tag_line .bold_text{
+    font-weight: 600;
+}
+
+._home ._btn_div .demo_btn{
+    background-color: #dbbc09;
+    font-size: 1.3em;
+    width: 10em;
+    height: 2.5em;
+    margin-top: 3em;
+    border: none;
+    border-radius: 0.5em;
+    color: #ffffff;
+    z-index: 600;
+    transition: all 1s;
+}
+
+._home .demo_btn:hover{
+    background-color: #ffffff;
+    /* border: 2px solid #096fdb; */
+    color: #096fdb;
+}
+
+._tag_div .tag_line2{
+    margin-top: 3.5em;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 1.6em;
+    line-height: 0.6em;
+    font-weight: 300;
+}
+
+._tag_div ._subs_form{
+    margin-top: 3em;
+}
+
+._tag_div .subs_email{
+    display: inline-flex;
+    height: 3em;
+    padding: 0em;
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+}
+
+._tag_div .subs_email input[type='email']{
+    padding-left: 15px;
+    text-align: left;
+    width: 18em;
+    margin: 0em;
+    color: #6e7985;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 0.6em 0em 0em 0.6em;
+}
+
+._tag_div .subs_email ._subs_btn{
+    text-align: left;
+    width: 8em;
+    margin: 0em;
+    background-color: #09b8db;
+    color: #ffffff;
+    padding-left: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 0em 0.6em 0.6em 0em;
+}
+
+._tag_div ._subs_form p{
+    margin-top: 0.3em;
+    font-size: 0.8em;
+    color: #ffffff;
+}
+
+
+
+._counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10em;
+}
+
+._counter .count{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #ffffff;
+    text-align: start;
+}
+
+.count::before{
+    content: '';
+    display: flex;
+    position: absolute;
+    background: url('../Image/3.png') no-repeat center center/cover;
+    width: 80%;
+    height: 10em;
+    left: 10%;
+    z-index: -1;
+    
+}
+._counter .count h2{
+    font-size: 1.3em;
+}
+
+._counter .count h2 span{
+    font-size: 3em;
+}
+
+._counter .count p{
+    font-size: 1.3em;
+}
+
+._counter .count .item{
+    padding: 0em 3em;
+}
+
+._counter .count .item:not(:last-child){
+    border-right: 1px solid #ffffff;
+}
+
+
+/* clients logo slide show */
+
+._client_show{
+    margin: 3em 0em;
+    background-color: whitesmoke;
+    padding: 2em 0em 1em;
+}
+
+._client_show ._show_header{
+    line-height: 1em;
+    padding: 1em 0em 0em;
+}
+
+._client_show ._show_header h1{
+    text-align: center;
+    color: #096fdb;
+    font-size: 3em;
+}
+
+._client_show ._show_header p{
+    text-align: center;
+    color: rgb(118, 118, 118);
+    font-size: 1.2em;
+}
+
+._client_show img {
+    width: 100px;
+    height: 100px;
+    animation: scroll 30s linear infinite;
+  }
+
+._client_show .slide-track:hover img {
+    animation-play-state: paused;
+  }
+  
+  .slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+  }
+  
+  .slider {
+    margin-top: 30px;
+    background-color: whitesmoke;
+    padding: 2em 2em 3em;
+  }
+  
+  @keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-1000%)}
+  }
