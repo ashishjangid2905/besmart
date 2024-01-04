@@ -1,10 +1,16 @@
 $(document).ready(function () {
     $(".tab_head").click(function () {
-        if ($(this).attr('class').indexOf('expand') == -1) 
+        if ($(this).next().hasClass('expand')) {
+            $(this).next().removeClass('expand');
+        } 
         
-        $(this).toggleClass("expand").next().slideToggle('fast')
-
-        // $(".tab").not($(this)).removeClass("open");
-        $(".collap").not($(this).next()).slideUp('fast');
+        else if($(this).next().siblings().hasClass('expand')) {
+            $(this).next().siblings().removeClass('expand');
+            $(this).next().addClass('expand');
+        }
+        
+        else {
+            $(this).next().addClass('expand');
+        }
     });
 });
