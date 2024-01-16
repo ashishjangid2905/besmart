@@ -670,7 +670,7 @@ footer .footer_section{
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 50em;
+    height: 50vw;
 }
 
 .home_banner::before{
@@ -699,9 +699,11 @@ footer .footer_section{
 .home_banner h1{
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
-    font-size: 6.75em;
+    font-size: 7.15vw;
     font-weight: 300;
-    padding-top: 0.45em;
+    padding-top: 1.95vw;
+    /* text-shadow: 2px 2px 1em #ffffff, -2px -2px 0em #ffffff; */
+    /* mix-blend-mode: screen; */
 }
 
 .home_banner h1>span{
@@ -711,13 +713,13 @@ footer .footer_section{
 .home_banner .home_banner2 p{
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
-    font-size: 2.3em;
+    font-size: 2.3vw;
 }
 
 
 ._home ._tag_div{
     position: relative;
-    margin-top: 2em;
+    margin-top: 2vw;
     z-index: 500;
 }
 
@@ -725,10 +727,10 @@ footer .footer_section{
 ._home .tag_line p{
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
-    font-size: 1.6em;
-    line-height: 0.6em;
+    font-size: 1.6vw;
+    line-height: 0.6vw;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 0.1vw;
 }
 
 ._home .tag_line .bold_text{
@@ -737,12 +739,12 @@ footer .footer_section{
 
 ._home ._btn_div .demo_btn{
     background-color: #dbbc09;
-    font-size: 1.3em;
-    width: 10em;
-    height: 2.5em;
-    margin-top: 3em;
+    font-size: 1.3vw;
+    width: 12vw;
+    height: 2.5vw;
+    margin-top: 3vw;
     border: none;
-    border-radius: 0.5em;
+    border-radius: 0.5vw;
     color: #ffffff;
     z-index: 600;
     transition: all 1s;
@@ -755,53 +757,53 @@ footer .footer_section{
 }
 
 ._tag_div .tag_line2{
-    margin-top: 3.5em;
+    margin-top: 3.5vw;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
-    font-size: 1.6em;
-    line-height: 0.6em;
+    font-size: 1.6vw;
+    line-height: 0.6vw;
     font-weight: 300;
 }
 
 ._tag_div ._subs_form{
-    margin-top: 3em;
+    margin-top: 3vw;
 }
 
 ._tag_div .subs_email{
     display: inline-flex;
-    height: 3em;
-    padding: 0em;
+    height: 3vw;
+    padding: 0vw;
     text-align: center;
     border: none;
-    border-radius: 1em;
+    border-radius: 1vw;
 }
 
 ._tag_div .subs_email input[type='email']{
     padding-left: 15px;
     text-align: left;
-    width: 18em;
+    width: 18vw;
     margin: 0em;
     color: #6e7985;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     border: none;
     border-radius: 0.6em 0em 0em 0.6em;
 }
 
 ._tag_div .subs_email ._subs_btn{
     text-align: left;
-    width: 8em;
-    margin: 0em;
+    width: 8vw;
+    margin: 0vw;
     background-color: #09b8db;
     color: #ffffff;
-    padding-left: 15px;
-    font-size: 1.2em;
+    padding-left: 0.5vw;
+    font-size: 1.2vw;
     border: none;
     border-radius: 0em 0.6em 0.6em 0em;
 }
 
 ._tag_div ._subs_form p{
-    margin-top: 0.3em;
-    font-size: 0.8em;
+    margin-top: 0.3vw;
+    font-size: 0.8vw;
     color: #ffffff;
 }
 
@@ -811,7 +813,7 @@ footer .footer_section{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10em;
+    height: 10vw;
 }
 
 ._counter .count{
@@ -829,25 +831,25 @@ footer .footer_section{
     position: absolute;
     background: url('../Image/3.png') no-repeat center center/cover;
     width: 80%;
-    height: 10em;
+    height: 12vw;
     left: 10%;
     z-index: -1;
     
 }
 ._counter .count h2{
-    font-size: 1.3em;
+    font-size: 1.3vw;
 }
 
 ._counter .count h2 span{
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 ._counter .count p{
-    font-size: 1.3em;
+    font-size: 1.3vw;
 }
 
 ._counter .count .item{
-    padding: 0em 3em;
+    padding: 0em 3vw;
 }
 
 ._counter .count .item:not(:last-child){
@@ -858,20 +860,20 @@ footer .footer_section{
 /* clients logo slide show */
 
 ._client_show{
-    margin: 3em 0em;
+    margin: 3vw 0vw;
     background-color: whitesmoke;
-    padding: 2em 0em 1em;
+    padding: 2vw 0vw 1vw;
 }
 
 ._client_show ._show_header{
-    line-height: 1em;
-    padding: 1em 0em 0em;
+    line-height: 1vw;
+    padding: 1vw 0vw 0vw;
 }
 
 ._client_show ._show_header h1{
     text-align: center;
     color: #7d8287;
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 ._client_show ._show_header h1 span{
@@ -883,7 +885,7 @@ footer .footer_section{
 ._client_show ._show_header p{
     text-align: center;
     color: rgb(118, 118, 118);
-    font-size: 1.2em;
+    font-size: 1.2vw;
 }
 
 ._client_show img {
@@ -899,14 +901,14 @@ footer .footer_section{
   .slide-track {
     width: 100%;
     display: flex;
-    gap: 3em;
+    gap: 3vw;
     overflow: hidden;
   }
   
   .slider {
     margin-top: 30px;
     background-color: whitesmoke;
-    padding: 2em 2em 3em;
+    padding: 2vw 2vw 3vw;
   }
   
   @keyframes scroll {
@@ -917,6 +919,10 @@ footer .footer_section{
   ._home_hlt{
     display: flex;
     flex-direction: column;
+    padding: auto;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
   }
 
   ._hlt_header{
@@ -925,12 +931,12 @@ footer .footer_section{
 
   ._hlt_header h1{
     color: #096fdb;
-    font-size: 2.7em;
+    font-size: 2.7vw;
     font-weight: 400;
   }
 
 ._hlt_header p{
-    font-size: 1.35em;
+    font-size: 1.35vw;
     color: #000;
 }
 
@@ -943,44 +949,8 @@ footer .footer_section{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 2.5em;
+    margin-top: 2.5vw;
 }
-
-.hlt_tabs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 70%;
-}
-
-.hlt_tabs h3{
-    padding: 5px 0px;
-    border-bottom: 1px solid #afafaf;
-}
-
-.hlt_tabs .tab{
-    color: #09b8db;
-    background-color: transparent;
-    border: none;
-    text-decoration: none;
-}
-
-.hlt_tabs .tab::after{
-    content: '+';
-    position: absolute;
-    right: 11em;
-}
-
-.collap{
-    display: none;
-    font-size: 1.2em;
-}
-
-.expand{
-    display: flex;
-}
-
-
 
 /* css usp cards start here */
 
@@ -990,13 +960,7 @@ footer .footer_section{
     --cardTopPadding: 1.1em;
     --cardMargin: 2vw;
     --space-sm: 0.75em;
-}
-
-._home_hlt{
-    display: flex;
-    background-color: #effcff;
-    justify-content: center;
-    align-items: center;
+    --space-h: 0.75em;
 }
 
 .usp_cards{
@@ -1031,24 +995,28 @@ footer .footer_section{
 
 
 #card1 .usp_cont{
-    background-color: #5fdaf3 ;
+    background: linear-gradient(#5fdaf385, #5fdaf3, #5fdaf3) ;
 }
 #card2 .usp_cont{
-    background-color: #4bc5de ;
+    background: linear-gradient(#4bc6de85, #4bc6de, #4bc6de) ;
+    /* background-color: #4bc6de85 ; */
 }
 #card3 .usp_cont{
-    background-color: #42b1c7 ;
+    background: linear-gradient(#42b1c785, #42b1c7, #42b1c7) ;
+    /* background-color: #42b1c784 ; */
 }
 #card4 .usp_cont{
-    background-color: #24a2bb ;
+    background: linear-gradient(#24a2bb85,#24a2bb, #24a2bb) ;
+    /* background-color: #24a2bb84 ; */
 }
 #card5 .usp_cont{
-    background-color: #2da9c2 ;
+    background: linear-gradient(#2da9c285, #2da9c2, #2da9c2) ;
+    /* background-color: #2da9c283 ; */
 }
 
 .usp_cards_items{
     position: sticky;
-    top: var(--space-sm);
+    top: var(--space-sm) ;
     padding-top: calc(var(--index) * var(--cardTopPadding));
     min-height: 350px;
     transform-origin: 50% -170%;
@@ -1059,9 +1027,10 @@ footer .footer_section{
     box-sizing: border-box;
     background-color: #e9eff582;
     border-radius: 30px;
+    overflow: hidden;
     align-items: center;
     justify-content: space-evenly;
-    padding-left: 30px;
+    box-shadow: -0.3em 0.3em 0.6em #5eb7b9a1;
 }
 
 .usp_text{
@@ -1069,13 +1038,13 @@ footer .footer_section{
 }
 
 .usp_text h2{
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: #ffffff;
     margin-bottom: 1em;
 }
 
 .usp_text p{
-    font-size: 1.1em;
+    font-size: 1em;
     color: #5e5e5e;
     line-height: 1.5em;
 }
@@ -1086,7 +1055,23 @@ footer .footer_section{
     padding: 0px;
 }
 
-.usp_img img{
-    border-radius: 0px 30px 30px 0px;
-    width: 100%;
+
+/* css for BE Datos section Banner */
+
+._counter_be{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+._counter_be::before{
+    content: '';
+    display: flex;
+    position: absolute;
+    background: url('../Image/3.png') no-repeat center center/cover;
+    width: 90%;
+    height: 40vw;
+    left: 5%;
+    z-index: -1;
 }
